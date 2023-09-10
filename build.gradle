@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'fr.catcore'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {url = "https://repo.spongepowered.org/maven"}
+}
+
+dependencies {
+    compileOnly("org.spongepowered:mixin:0.8.5")
+    compileOnly "org.ow2.asm:asm:${project.asm_version}"
+    compileOnly "org.ow2.asm:asm-analysis:${project.asm_version}"
+    compileOnly "org.ow2.asm:asm-commons:${project.asm_version}"
+    compileOnly "org.ow2.asm:asm-tree:${project.asm_version}"
+    compileOnly "org.ow2.asm:asm-util:${project.asm_version}"
+}
+
+java {
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+}
