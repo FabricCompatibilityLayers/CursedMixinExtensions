@@ -4,7 +4,6 @@ import fr.catcore.cursedmixinextensions.annotations.*;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.*;
-import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.spongepowered.asm.util.Annotations;
 
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ import java.util.function.Consumer;
  * @author LlamaLad7, Cat Core
  */
 public class CursedMixinExtensions {
-    public static void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
+    public static void postApply(ClassNode targetClass) {
         AnnotationNode changeSuperClass = Annotations.getVisible(targetClass, ChangeSuperClass.class);
 
         if (changeSuperClass != null) {
