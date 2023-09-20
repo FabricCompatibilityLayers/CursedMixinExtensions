@@ -1,0 +1,20 @@
+sourceSets {
+    main {
+        java
+        resources
+        compileClasspath += rootProject.sourceSets.main.compileClasspath
+        runtimeClasspath += rootProject.sourceSets.main.runtimeClasspath
+    }
+}
+
+processResources {
+    inputs.property("version", version)
+
+    filesMatching("fabric.mod.json") {
+        expand("version": version)
+    }
+}
+
+compileJava {
+    source rootProject.sourceSets.main.java, sourceSets.main.java
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "cursedmixinextensions",
+  "version": "${version}",
+  "name": "CursedMixinExtensions",
+  "description": "Additional annotations to use with mixin to achieve cursed stuff.",
+  "authors": [
+    "CatCore"
+  ],
+  "contact": {
+    "homepage": "https://github.com/thecatcore/CursedMixinExtensions",
+    "sources": "https://github.com/thecatcore/CursedMixinExtensions"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.14.11"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ]
+    }
+  }
+}
