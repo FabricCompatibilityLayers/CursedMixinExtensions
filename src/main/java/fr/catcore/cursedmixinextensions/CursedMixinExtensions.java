@@ -13,7 +13,8 @@ import java.util.Objects;
 import java.util.function.Consumer;
 
 /**
- * @author LlamaLad7, Cat Core
+ * @author LlamaLad7
+ * @author Cat Core
  */
 public class CursedMixinExtensions {
     public static void postApply(ClassNode targetClass) {
