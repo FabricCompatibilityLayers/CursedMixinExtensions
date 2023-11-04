@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "id": "cursedmixinextensions",
   "version": "${version}",
-  "name": "CursedMixinExtensions",
-  "description": "Additional annotations to use with mixin to achieve cursed stuff.",
+  "name": "Cursed Mixin Extensions",
+  "description": "Additional annotations to use with Mixin to achieve cursed stuff.",
   "authors": [
     "CatCore"
   ],
+  "contributors: [
+    "LlamaLad7"
+  ],
   "contact": {
-    "homepage": "https://github.com/thecatcore/CursedMixinExtensions",
-    "sources": "https://github.com/thecatcore/CursedMixinExtensions"
+    "homepage": "https://github.com/FabricCompatibilityLayers/CursedMixinExtensions",
+    "sources": "https://github.com/FabricCompatibilityLayers/CursedMixinExtensions"
   },
   "license": "MIT",
   "environment": "*",
-  "mixins": [],
-  "depends": {
-    "fabricloader": ">=0.14.11"
-  },
   "custom": {
     "modmenu": {
       "badges": [ "library" ]
